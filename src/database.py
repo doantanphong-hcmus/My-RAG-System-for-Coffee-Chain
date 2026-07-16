@@ -33,10 +33,10 @@ def save_chunks_to_db(chunks):
         
     collection_name=COLLECTION_NAME, 
         
-    collection_string=DATABASE_URL, 
+    connection_string=DATABASE_URL, 
         use_jsonb=True, 
         pre_delete_collection=True 
         # Xóa data cũ của collection này nếu lỡ chạy file ingest nhiều lần
     )
     print("Lưu dữ liệu vào Database thành công!")
-    
+
