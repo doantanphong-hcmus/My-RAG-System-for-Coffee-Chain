@@ -21,9 +21,9 @@ def get_rag_chain():
     llm = ChatAnthropic(
         model_name="claude-opus-4-8",   
         api_key=ANTHROPIC_AUTH_TOKEN,
-
         base_url=ANTHROPIC_BASE_URL, 
-        temperature=0.2
+        temperature=0.2,
+        streaming=True
     )
 
 
